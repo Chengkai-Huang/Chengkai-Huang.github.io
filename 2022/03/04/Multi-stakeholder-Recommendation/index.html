@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="第一部分是Christine Bauer的slides 传统的推荐系统衡量指标（Tradition of recommender systems evaluation）1.Offline evaluation  historic data   mimic user behavior   no user involved   2.Online evaluation  real-world setti">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Multi-stakeholder Recommendation">
+<meta property="og:url" content="https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/index.html">
+<meta property="og:site_name" content="Chengkai :)">
+<meta property="og:description" content="第一部分是Christine Bauer的slides 传统的推荐系统衡量指标（Tradition of recommender systems evaluation）1.Offline evaluation  historic data   mimic user behavior   no user involved   2.Online evaluation  real-world setti">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/Chengkai/AppData/Roaming/Typora/typora-user-images/image-20220304105947814.png">
+<meta property="og:image" content="c:/Users/Chengkai/AppData/Roaming/Typora/typora-user-images/image-20220304110938179.png">
+<meta property="og:image" content="c:/Users/Chengkai/AppData/Roaming/Typora/typora-user-images/image-20220304111220608.png">
+<meta property="og:image" content="c:/Users/Chengkai/AppData/Roaming/Typora/typora-user-images/image-20220304111542901.png">
+<meta property="og:image" content="c:/Users/Chengkai/AppData/Roaming/Typora/typora-user-images/image-20220304111847845.png">
+<meta property="og:image" content="c:/Users/Chengkai/AppData/Roaming/Typora/typora-user-images/image-20220304112130670.png">
+<meta property="og:image" content="c:/Users/Chengkai/AppData/Roaming/Typora/typora-user-images/image-20220304112143359.png">
+<meta property="og:image" content="c:/Users/Chengkai/AppData/Roaming/Typora/typora-user-images/image-20220304112156138.png">
+<meta property="og:image" content="c:/Users/Chengkai/AppData/Roaming/Typora/typora-user-images/image-20220304112255141.png">
+<meta property="article:published_time" content="2022-03-03T23:56:09.000Z">
+<meta property="article:modified_time" content="2022-03-04T00:37:06.475Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Fairness, Multi-stakeholder Recommendation">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/Chengkai/AppData/Roaming/Typora/typora-user-images/image-20220304105947814.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Multi-stakeholder Recommendation</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/projects_url">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2022/03/04/Multi-stakeholder-Recommendation-2/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2022/03/01/Meta-Learning-Hung-yi-Lee/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&text=Multi-stakeholder Recommendation"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&title=Multi-stakeholder Recommendation"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&is_video=false&description=Multi-stakeholder Recommendation"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Multi-stakeholder Recommendation&body=Check out this article: https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&title=Multi-stakeholder Recommendation"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&title=Multi-stakeholder Recommendation"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&title=Multi-stakeholder Recommendation"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&title=Multi-stakeholder Recommendation"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&name=Multi-stakeholder Recommendation&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&t=Multi-stakeholder Recommendation"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%A0%E7%BB%9F%E7%9A%84%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E8%A1%A1%E9%87%8F%E6%8C%87%E6%A0%87%EF%BC%88Tradition-of-recommender-systems-evaluation%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">传统的推荐系统衡量指标（Tradition of recommender systems evaluation）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#What-is-a-research-question"><span class="toc-number">1.1.</span> <span class="toc-text">What is a research question?</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Multi-stakeholder Recommendation
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">John Doe</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-03-03T23:56:09.000Z" itemprop="datePublished">2022-03-04</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Fairness-Multi-stakeholder-Recommendation/" rel="tag">Fairness, Multi-stakeholder Recommendation</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>第一部分是Christine Bauer的slides</p>
+<h2 id="传统的推荐系统衡量指标（Tradition-of-recommender-systems-evaluation）"><a href="#传统的推荐系统衡量指标（Tradition-of-recommender-systems-evaluation）" class="headerlink" title="传统的推荐系统衡量指标（Tradition of recommender systems evaluation）"></a>传统的推荐系统衡量指标（Tradition of recommender systems evaluation）</h2><p>1.Offline evaluation</p>
+<ul>
+<li><p>historic data </p>
+</li>
+<li><p>mimic user behavior </p>
+</li>
+<li><p>no user involved</p>
+</li>
+</ul>
+<p>2.Online evaluation</p>
+<ul>
+<li><p>real-world settings </p>
+</li>
+<li><p>productive system </p>
+</li>
+<li><p>users involved</p>
+</li>
+</ul>
+<p>3.User studies</p>
+<ul>
+<li>user involved</li>
+<li>provided with tasks</li>
+<li>record interaction</li>
+<li>questionnaires</li>
+</ul>
+<p><img src="C:\Users\Chengkai\AppData\Roaming\Typora\typora-user-images\image-20220304105947814.png" alt="image-20220304105947814"></p>
+<p>There are blind spots in single method evaluation with one metric:</p>
+<p>使用单一的衡量指标很容易带来盲点</p>
+<p>举了一点音乐消费者的例子，比如分析一个在音乐平台听过的用户：</p>
+<p>Offline evaluation with focus on the music consumer：</p>
+<p>It can show that users’ historic listening behavior can be simulated (e.g., high accuracy)</p>
+<p>但是：</p>
+<p>1）Does the user want to listen to these familiar songs in the future?</p>
+<p>2）Would the user be satisfied with the same number&#x2F;proportion of unfamiliar songs?</p>
+<p>3）Is the user interested in discovering (more) new, unfamiliar songs?</p>
+<p>个人感觉几个问题都非常的重要，但是也十分的复杂，因为就听歌这个行为而言，人的主观意识非常的强烈。愿不愿意继续保持自己听歌的习惯，还是会随着时间发生兴趣的迁移，甚至对于探索新歌曲有没有兴趣都是需要结合一些社会调查或者辅助手段来得知的。</p>
+<p>此外，一直困扰我的问题就是，往往我们在离线数据集对用户建模的时候，不会考虑平台对用户造成的影响。但是实际上平台的推荐系统常常会对用户造成了信息茧房，或者说平台&#x2F;社交媒体&#x2F;用户的社交网络对用户的偏好其实也造成了影响，这是一个双向的过程，人-系统都是其中一环，相互影响。</p>
+<p>Online evaluation with focus on the music consumer</p>
+<p>It can show that users click or skip recommended songs; or stay on platform for longer&#x2F;shorter than usually.</p>
+<p>1） Does the user want to listen to the recommended songs in the future?</p>
+<p>2）Is the user is satisfied with the number&#x2F;proportion of unfamiliar songs recommended?</p>
+<p>e.g., wants more discovery; skipped songs did not meet preferences; not in the mood for unfamiliar songs</p>
+<p>在线指标中，还是这些核心问题，如何保持推荐的比例问题，用户有多想从之前的偏好中迁移到新的偏好当中，或者说怎么去评价这个问题。</p>
+<p>其实推荐系统优化的指标仅仅使用AUC&#x2F;NDCG、CTR确实是不合理的，可能短期得到收益，但是长期的用户的留存率会降低。</p>
+<p><img src="C:\Users\Chengkai\AppData\Roaming\Typora\typora-user-images\image-20220304110938179.png" alt="image-20220304110938179"></p>
+<p>What does all that mean for evaluation?</p>
+<p>Results of the tradition of recommender systems evaluation</p>
+<p>存在的问题：</p>
+<p>1）Focus on one single perspective</p>
+<p>2）Incomplete picture: blind spots 盲点</p>
+<p>3）Small set of metrics; often picked from one perspective only  往往只考虑一个metric的方面</p>
+<p>4）Evaluation results may differ </p>
+<p>e.g., user satisfaction does not always correlate with high recommender accuracy </p>
+<p>用户满意度往往并不反应在高的推荐准确率之上</p>
+<p>offline evaluations of accuracy are not always meaningful for predicting relative performance of different techniques</p>
+<p>准确率的离线评估对于预测不同技术的相对性能并不总是有意义的</p>
+<p><img src="C:\Users\Chengkai\AppData\Roaming\Typora\typora-user-images\image-20220304111220608.png" alt="image-20220304111220608"></p>
+<p>怎么融合多个不同的定量&#x2F;定性的指标去进行评估。</p>
+<p>1）To capture the same phenomenon from different angles 从不同的角度捕捉相同的现象</p>
+<p>2）To capture diverse, but complementary phenomena 捕捉多样化但互补的现象</p>
+<p>3） To resolve conflicting findings 解决相互矛盾的发现</p>
+<p>4） To get an integrated picture of performance in the context of use 在使用环境中全面了解性能</p>
+<p>5） To triangulate quality  </p>
+<p><img src="C:\Users\Chengkai\AppData\Roaming\Typora\typora-user-images\image-20220304111542901.png" alt="image-20220304111542901"></p>
+<p>Designing and conducting mixed methods research. </p>
+<p>感觉像是一种得到更为客观实验结果的方法论。</p>
+<p><img src="C:\Users\Chengkai\AppData\Roaming\Typora\typora-user-images\image-20220304111847845.png" alt="image-20220304111847845"></p>
+<p><img src="C:\Users\Chengkai\AppData\Roaming\Typora\typora-user-images\image-20220304112130670.png" alt="image-20220304112130670"></p>
+<p><img src="C:\Users\Chengkai\AppData\Roaming\Typora\typora-user-images\image-20220304112143359.png" alt="image-20220304112143359"></p>
+<p><img src="C:\Users\Chengkai\AppData\Roaming\Typora\typora-user-images\image-20220304112156138.png" alt="image-20220304112156138"></p>
+<p>Things to remember:</p>
+<p>1)Look at phenomena from different angles</p>
+<p>2)If your research is related to users, involve them!</p>
+<p>3)When focusing, have the overall picture in mind</p>
+<p>4)When having the overall picture in mind, keep your focus</p>
+<p><img src="C:\Users\Chengkai\AppData\Roaming\Typora\typora-user-images\image-20220304112255141.png" alt="image-20220304112255141"></p>
+<p>Every research endeavor starts with <strong>a research goal</strong> and <strong>a research question</strong> .</p>
+<p>(这句话有启发)</p>
+<h3 id="What-is-a-research-question"><a href="#What-is-a-research-question" class="headerlink" title="What is a research question?"></a>What is a research question?</h3><ul>
+<li><p>The researcher asks a very specific question and tests a specific hypothesis. </p>
+</li>
+<li><p>Broad questions are usually broken into smaller, testable hypotheses or questions. 分治法</p>
+</li>
+</ul>
+<p>Often called an objective or aim, though calling it a question tends to help with focusing and thinking about how to find an answer. </p>
+<p>相反，What makes a poor research question? </p>
+<ul>
+<li><p>a question that matters to nobody, not even you 没有对任何人有意义的问题</p>
+</li>
+<li><p>hoping one emerges from routine records&#x2F;data available</p>
+<p>• the records will be biased and confounded 困惑</p>
+<p>• they will lack information you need to answer your question reliably, because they were collected for another reason</p>
+</li>
+<li><p>fishing expedition&#x2F;data dredging – gathering new data and hoping a question will emerge</p>
+</li>
+</ul>
+<p>PICO：</p>
+<p>Problem or Population&#x2F;  Intervention干涉&#x2F; Comparison&#x2F; Outcome</p>
+<p>Small scale preliminary study of your larger trial：对您的大型试验进行小规模初步研究</p>
+<p>后面都是方法论的东西了。。。</p>
+<p>Checklist for the research project (1&#x2F;3)</p>
+<ol>
+<li>Theoretical feasibility  理论可行性</li>
+</ol>
+<p>• You can’t do it all by yourself… </p>
+<p>• Check the literature (overview and “ground breaking” articles are particularly helpful)</p>
+<p> • Speak to advisors, peers, and other researchers in the field</p>
+<ol start="2">
+<li>Inventory of approaches and methods</li>
+</ol>
+<p>• There exist constraints. You can’t study everything in any way, but you do have choice</p>
+<p>• Finding a good research design always is an iterative process (so don’t worry if your first version looks bad)</p>
+<ol start="3">
+<li><p>Identify your main approach</p>
+<p>• Look at similar research </p>
+<p>• Remember, if you want to “prove things” and make causality claims, you need comparison! </p>
+<p>• e.g., qualitative approaches to explore and to understand, quantitative approaches to confirm, generalize, prove,…</p>
+</li>
+<li><p>Methodological feasibility</p>
+</li>
+<li><p>Does your theory part really relate to your empirical &#x2F; practical part?</p>
+</li>
+<li><p>Make sure that you can produce needed data and then analyze them</p>
+</li>
+<li><p>Check your skills and resources</p>
+</li>
+<li><p>Do some planning</p>
+</li>
+</ol>
+<blockquote>
+<p>Answering the right questions: Leveraging multiple methods to answer what you were looking for</p>
+<p>Research design is a function of the research question; not choice!</p>
+<p>Match the research design to research question</p>
+<p>Focus, focus, focus!</p>
+</blockquote>
+<p>Christine Bauer</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/projects_url">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%A0%E7%BB%9F%E7%9A%84%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F%E8%A1%A1%E9%87%8F%E6%8C%87%E6%A0%87%EF%BC%88Tradition-of-recommender-systems-evaluation%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">传统的推荐系统衡量指标（Tradition of recommender systems evaluation）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#What-is-a-research-question"><span class="toc-number">1.1.</span> <span class="toc-text">What is a research question?</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&text=Multi-stakeholder Recommendation"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&title=Multi-stakeholder Recommendation"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&is_video=false&description=Multi-stakeholder Recommendation"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Multi-stakeholder Recommendation&body=Check out this article: https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&title=Multi-stakeholder Recommendation"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&title=Multi-stakeholder Recommendation"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&title=Multi-stakeholder Recommendation"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&title=Multi-stakeholder Recommendation"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&name=Multi-stakeholder Recommendation&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://chengkai-huang.github.io.git/2022/03/04/Multi-stakeholder-Recommendation/&t=Multi-stakeholder Recommendation"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2022
+    John Doe
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/projects_url">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
