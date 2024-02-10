@@ -4,12 +4,11 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+Hi there! I am a Ph.D. candidate at [Data Dynamics group](http://insdata.org/beta), School of Computer Science and Engineering, [the University of New South Wales ](https://www.unsw.edu.au/)(UNSW) since 2021. I am fortunate to be advised by [Prof. Lina Yao](http://www.linayao.com/). 
 
 ## Research Interests
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+- **Recommender Systems:** sequential recommendation, multi-modal recommendation
 
 ## News
 
