@@ -7,7 +7,6 @@ main:
     pdf: https://dl.acm.org/doi/10.1145/3539618.3591672
     code: https://github.com/MrGiovanni/ContinualLearning
     bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/exmaple_1.png
 
   - title: "Modeling Temporal Positive and Negative Excitation for Sequential Recommendation"
     authors: <strong>Chengkai Huang*</strong>, Shoujin Wang, Xianzhi Wang and Lina Yao (*Corresponding authors)
