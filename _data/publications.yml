@@ -5,6 +5,8 @@ main:
     conference_short: Preprint 
     conference: Arxiv</strong>, 2024.
     pdf: https://arxiv.org/abs/2402.11143
+    code: https://github.com/MrGiovanni/ContinualLearning
+    bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/example_3.png
 
   - title: Dual Contrastive Transformer for Hierarchical Preference Modeling in Sequential Recommendation
