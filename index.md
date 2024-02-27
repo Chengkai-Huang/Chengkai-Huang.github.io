@@ -12,7 +12,7 @@ Hi there! I am a Ph.D. candidate at [Data Dynamics group](http://insdata.org/bet
 
 ## News
 
-- **[Feb. 2024]** Our survey on foundation models for recommendations has been posted on arXiv.
+- **[Feb. 2024]** Our survey on foundation models for recommendations has been posted on [arXiv](https://arxiv.org/abs/2402.11143).
 - **[Apr. 2023]** Our paper about sequential recommendation is accepted to SIGIR 2023.
 - **[Jan. 2023]** Our paper about sequential recommendation is accepted to The Web Conference 2023
 
