@@ -12,6 +12,8 @@ Hi there! I am a Ph.D. candidate at [Data Dynamics group](http://insdata.org/bet
 
 ## News
 
+- **[Nov. 2024]** Our paper about adaptive RAG for LLMs is accepted to COLING 2025.
+- **[Sep. 2024]** Our survey on federated large language models has been posted on [arXiv](https://arxiv.org/pdf/2409.15723).
 - **[Feb. 2024]** Our survey on foundation models for recommendations has been posted on [arXiv](https://arxiv.org/abs/2402.11143).
 - **[Apr. 2023]** Our paper about sequential recommendation is accepted to SIGIR 2023.
 - **[Jan. 2023]** Our paper about sequential recommendation is accepted to The Web Conference 2023
