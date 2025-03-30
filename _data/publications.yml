@@ -2,7 +2,7 @@ main:
   - title: "Embedding-Informed Adaptive Retrieval-Augmented Generation of Large Language Models"
     authors: <strong>Chengkai Huang*</strong>, Yu Xia, Rui Wang, Kaige Xie, Tong Yu, Julian McAuley, Lina Yao (*Corresponding authors)
     conference_short: COLING
-    conference: International Conference on Computational Linguistics(COLING)</strong>, 2025.
+    conference: International Conference on Computational Linguistics <strong>(COLING)</strong>, 2025.
     pdf: https://arxiv.org/abs/2404.03514
     code: https://arxiv.org/abs/2404.03514
     bibtex: https://arxiv.org/abs/2404.03514
