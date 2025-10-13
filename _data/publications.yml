@@ -1,12 +1,20 @@
 main:
+  - title: "Listwise Preference Diffusion Optimization for User Behavior Trajectories Prediction"
+    authors: Hongtao Huang, <strong>Chengkai Huang*</strong>, Junda Wu, Tong Yu, Julian McAuley and Lina Yao (*Equal first authors)
+    conference_short: NeurIPS
+    conference: The Thirty-Ninth Annual Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2025.
+
+  - title: "Federated In-Context Learning: Iterative Refinement for Improved Answer Quality"
+    authors: Ruhan Wang*, Zhiyong Wang*, <strong>Chengkai Huang*</strong>, Rui Wang, Tong Yu, Lina Yao, John C. S. Lui and Dongruo Zhou(*Equal first authors)
+    conference_short: ICML
+    conference: Forty-Second International Conference on Machine Learning <strong>(ICML)</strong>, 2025.
+    pdf: https://openreview.net/pdf?id=TUk7gCqtmf
+
   - title: "Embedding-Informed Adaptive Retrieval-Augmented Generation of Large Language Models"
-    authors: <strong>Chengkai Huang*</strong>, Yu Xia, Rui Wang, Kaige Xie, Tong Yu, Julian McAuley, Lina Yao (*Corresponding authors)
+    authors: <strong>Chengkai Huang*</strong>, Yu Xia, Rui Wang, Kaige Xie, Tong Yu, Julian McAuley and Lina Yao (*Corresponding authors)
     conference_short: COLING
     conference: International Conference on Computational Linguistics <strong>(COLING)</strong>, 2025.
     pdf: https://arxiv.org/abs/2404.03514
-    code: https://arxiv.org/abs/2404.03514
-    bibtex: https://arxiv.org/abs/2404.03514
-    image: ./assets/img/coling25.png
 
 
   - title: Dual Contrastive Transformer for Hierarchical Preference Modeling in Sequential Recommendation
@@ -14,15 +22,10 @@ main:
     conference_short: SIGIR
     conference: International ACM SIGIR Conference on Research and Development in Information Retrieval <strong>(SIGIR)</strong>, 2023.
     pdf: https://dl.acm.org/doi/10.1145/3539618.3591672
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/example_2.png
+
 
   - title: "Modeling Temporal Positive and Negative Excitation for Sequential Recommendation"
     authors: <strong>Chengkai Huang*</strong>, Shoujin Wang, Xianzhi Wang and Lina Yao (*Corresponding authors)
     conference_short: WWW
     conference: The ACM Web Conference <strong>(WWW)</strong>, 2023.
     pdf: https://dl.acm.org/doi/abs/10.1145/3543507.3583463
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    image: ./assets/img/example_1.png
