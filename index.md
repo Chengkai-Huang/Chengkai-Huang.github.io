@@ -12,7 +12,9 @@ Hi there! I am a Ph.D. candidate at [Data Dynamics group](http://insdata.org/bet
 
 ## News
 
-
+- **[Oct. 2025]** Our paper about diffusion models for user behavior trajectories prediction has been accepted by NeurIPS 2025.
+- **[Sep. 2025]** Our tutorial about LLM agent for Recsys has been accepted by [RecSys 2025](https://dl.acm.org/doi/full/10.1145/3705328.3748007).
+- **[Aug. 2025]** Our paper about debiasing Recsys has been accepted by [CIKM 2025](https://arxiv.org/pdf/2505.03655?).
 - **[Mar. 2025]** Our paper about diffusion models for recommender systems has been posted on [arXiv](https://arxiv.org/abs/2410.21967).
 - **[Mar. 2025]** Our perspective paper on Agentic Recommender Systems has been posted on [arXiv](https://arxiv.org/abs/2503.16734).
 - **[Nov. 2024]** Our paper about adaptive RAG for LLMs is accepted to COLING 2025.
