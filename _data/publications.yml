@@ -1,4 +1,9 @@
 main:
+  - title: "Dual Conditional Diffusion Models for Sequential Recommendation"
+    authors: Hongtao Huang*, <strong>Chengkai Huang*</strong>, Tong Yu, Xiaojun Chang, Wen Hu, Julian McAuley, Lina Yao (*Equal first authors)
+    conference_short: WSDM
+    conference: The Nineteenth International Conference on Web Search and Data Mining <strong>(NeurIPS)</strong>, 2026.
+
   - title: "Listwise Preference Diffusion Optimization for User Behavior Trajectories Prediction"
     authors: Hongtao Huang*, <strong>Chengkai Huang*</strong>, Junda Wu, Tong Yu, Julian McAuley and Lina Yao (*Equal first authors)
     conference_short: NeurIPS
