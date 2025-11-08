@@ -11,9 +11,10 @@ Hi there! I am a Ph.D. candidate at [Data Dynamics group](http://insdata.org/bet
 - **Recommender Systems:** sequential recommendation, multi-modal recommendation
 
 ## News
-- **[Oct. 2025]** Our paper about diffusion models for sequential recommendation has been accepted by WSDM 2026.
-- **[Oct. 2025]** Our paper about diffusion models for user behavior trajectories prediction has been accepted by NeurIPS 2025.
-- **[Sep. 2025]** Our tutorial about LLM agent for Recsys has been accepted by [RecSys 2025](https://dl.acm.org/doi/full/10.1145/3705328.3748007).
+- **[Oct. 2025]** I gave a talk titled “Towards Agentic Recommenders: A Journey from Discriminative to Generative Paradigms” at Macquarie University.
+- **[Oct. 2025]** 🎉 Our paper about diffusion models for sequential recommendation has been accepted by [WSDM 2026](https://arxiv.org/abs/2410.21967).
+- **[Oct. 2025]** 🎉 Our paper about diffusion models for user behavior trajectories prediction has been accepted by [NeurIPS 2025](https://arxiv.org/abs/2511.00530).
+- **[Sep. 2025]** 🎉 Our tutorial about LLM agent for Recsys has been accepted by [RecSys 2025](https://dl.acm.org/doi/full/10.1145/3705328.3748007).
 - **[Aug. 2025]** Our paper about debiasing Recsys has been accepted by [CIKM 2025](https://arxiv.org/pdf/2505.03655?).
 - **[Mar. 2025]** Our paper about diffusion models for recommender systems has been posted on [arXiv](https://arxiv.org/abs/2410.21967).
 - **[Mar. 2025]** Our perspective paper on Agentic Recommender Systems has been posted on [arXiv](https://arxiv.org/abs/2503.16734).
