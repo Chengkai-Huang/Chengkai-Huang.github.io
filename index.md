@@ -11,6 +11,7 @@ Hi there! I am a Ph.D. candidate at [Data Dynamics group](http://insdata.org/bet
 - **Recommender Systems:** sequential recommendation, multi-modal recommendation
 
 ## News
+- **[Jan. 2026]** 🎉 Two of our papers on multi-domain recommendation and retrieval-augmented generation (RAG) have been accepted to WWW 2026.
 - **[Oct. 2025]** I gave a talk titled “Towards Agentic Recommenders: A Journey from Discriminative to Generative Paradigms” at Macquarie University.
 - **[Oct. 2025]** 🎉 Our paper about diffusion models for sequential recommendation has been accepted by [WSDM 2026](https://arxiv.org/abs/2410.21967).
 - **[Oct. 2025]** 🎉 Our paper about diffusion models for user behavior trajectories prediction has been accepted by [NeurIPS 2025](https://arxiv.org/abs/2511.00530).
