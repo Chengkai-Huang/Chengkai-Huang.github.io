@@ -3,13 +3,13 @@ main:
     authors: Xiaoxin Ye, <strong>Chengkai Huang+</strong>, Hongtao Huang, Lina Yao (+Corresponding author)
     conference_short: WWW
     conference: The ACM Web Conference <strong>(WWW)</strong>, 2026.
-    pdf: https://dl.acm.org/doi/abs/10.1145/3543507.3583463
+    pdf: https://arxiv.org/abs/2510.21021
 
    - title: "PruneRAG: Confidence-Guided Query Decomposition Trees for Efficient Retrieval-Augmented Generation"
     authors: Shuguang Jiao, Xinyu Xiao, Yunfan Wei, Shuhan Qi, <strong>Chengkai Huang+</strong>, Quan Z. Sheng, Lina Yao (+Corresponding author)
     conference_short: WSDM
     conference: The Nineteenth International Conference on Web Search and Data Mining <strong>(WSDM)</strong>, 2026.
-    pdf: https://dl.acm.org/doi/abs/10.1145/3543507.3583463
+    pdf: https://arxiv.org/abs/2601.11024
     code: https://github.com/Fdioa/PruneRAG
 
 
@@ -17,6 +17,7 @@ main:
     authors: Hongtao Huang*, <strong>Chengkai Huang*</strong>, Tong Yu, Xiaojun Chang, Wen Hu, Julian McAuley, Lina Yao (*Equal first authors)
     conference_short: WSDM
     conference: The Nineteenth International Conference on Web Search and Data Mining <strong>(WSDM)</strong>, 2026.
+    pdf: https://arxiv.org/abs/2410.21967
     code: https://github.com/Chengkai-Huang/DCRec_code
 
   - title: "Listwise Preference Diffusion Optimization for User Behavior Trajectories Prediction"
