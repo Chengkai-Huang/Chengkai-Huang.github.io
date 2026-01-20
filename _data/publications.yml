@@ -7,8 +7,8 @@ main:
 
   - title: "PruneRAG: Confidence-Guided Query Decomposition Trees for Efficient Retrieval-Augmented Generation"
     authors: "Shuguang Jiao, Xinyu Xiao, Yunfan Wei, Shuhan Qi, <strong>Chengkai Huang+</strong>, Quan Z. Sheng, Lina Yao (+Corresponding author)"
-    conference_short: "WSDM"
-    conference: "The Nineteenth International Conference on Web Search and Data Mining <strong>(WSDM)</strong>, 2026."
+    conference_short: "WWW"
+    conference: "The ACM Web Conference <strong>(WWW)</strong>, 2026."
     pdf: "https://arxiv.org/abs/2601.11024"
     code: "https://github.com/Fdioa/PruneRAG"
 
