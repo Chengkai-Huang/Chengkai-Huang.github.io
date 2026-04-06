@@ -1,4 +1,17 @@
 main:
+
+  - title: "Factorized Latent Reasoning for LLM-based Recommendation"
+    authors: "Tianqi Gao*, <strong>Chengkai Huang*</strong>, Zihan Wang, Cao Liu, Ke Zeng and Lina Yao (*Equal first authors)"
+    conference_short: "SIGIR"
+    conference: "ACM SIGIR Conference on Research and Development in Information Retrieval <strong>(SIGIR)</strong>, 2026."
+    pdf: "https://arxiv.org/abs/2510.21021"
+
+  - title: "Purifying Multimodal Retrieval: Fragment-Level Evidence Selection for RAG"
+    authors: "Xihang Wang, Zihan Wang, <strong>Chengkai Huang+</strong>, Cao Liu, Ke Zeng, Quan Z. Sheng and Lina Yao (+Corresponding author)"
+    conference_short: "SIGIR"
+    conference: "ACM SIGIR Conference on Research and Development in Information Retrieval <strong>(SIGIR)</strong>, 2026."
+    pdf: "https://arxiv.org/abs/2510.21021"
+    
   - title: "Gaussian Mixture Flow Matching with Domain Alignment for Multi-Domain Sequential Recommendation"
     authors: "Xiaoxin Ye, <strong>Chengkai Huang+</strong>, Hongtao Huang, Lina Yao (+Corresponding author)"
     conference_short: "WWW"
