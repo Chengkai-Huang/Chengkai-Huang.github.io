@@ -1,4 +1,15 @@
 main:
+  - title: "SceneAlign: Aligning Multimodal Reasoning to Scene Graphs in Complex Visual Scenes"
+    authors: "Chuhan Wang, Xintong Li, Jennifer Yuntong Zhang, Junda Wu, Chengkai Huang, Lina Yao, Julian McAuley and Jingbo Shang"
+    conference_short: "ACL"
+    conference: "The 64th Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>, 2026."
+    pdf: "https://arxiv.org/abs/2510.21021"
+ 
+  - title: "MemWeaver: Weaving Hybrid Memories for Traceable Long-Horizon Agentic Reasoning"
+    authors: "Juexiang Ye, Xue Li, Yang Xinyu, Chengkai Huang, Lanshun Nie, Lina Yao and Dechen Zhan"
+    conference_short: "ACL"
+    conference: "The 64th Annual Meeting of the Association for Computational Linguistics <strong>(ACL)</strong>, 2026."
+    pdf: "https://arxiv.org/abs/2510.21021"   
 
   - title: "Factorized Latent Reasoning for LLM-based Recommendation"
     authors: "Tianqi Gao*, <strong>Chengkai Huang*</strong>, Zihan Wang, Cao Liu, Ke Zeng and Lina Yao (*Equal first authors)"
