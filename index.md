@@ -11,7 +11,9 @@ Hi there! I am a Ph.D. candidate at [Data Dynamics group](http://insdata.org/bet
 - **Recommender Systems:** sequential recommendation, multi-modal recommendation
 
 ## News
+- **[Apr. 2026]** 🎉 Two of our papers on multi-modal reasoning and agentic memory have been accepted to ACL 2026. Congrats to Chuhan and Juexiang!
 - **[Apr. 2026]** 🎉 Three of our papers on latent reasoning for recommendation and retrieval-augmented generation (RAG) have been accepted to SIGIR 2026. Congrats to Tianqi and Xihang!
+- **[Mar. 2026]** 🎉 Our survey on federated large language models has been accepted to PAKDD 2026 [arXiv](https://arxiv.org/pdf/2409.15723).
 - **[Jan. 2026]** 🎉 Two of our papers on multi-domain recommendation and retrieval-augmented generation (RAG) have been accepted to WWW 2026.
 - **[Oct. 2025]** I gave a talk titled “Towards Agentic Recommenders: A Journey from Discriminative to Generative Paradigms” at Macquarie University.
 - **[Oct. 2025]** 🎉 Our paper about diffusion models for sequential recommendation has been accepted by [WSDM 2026](https://arxiv.org/abs/2410.21967).
